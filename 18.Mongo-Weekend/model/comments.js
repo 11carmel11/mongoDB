@@ -9,7 +9,7 @@ mongoose
   .catch((err) => console.log(err));
 
 const CommentsSchema = new mongoose.Schema({
-  body: {
+  username: {
     type: String,
     required: true,
   },
