@@ -1,10 +1,8 @@
 const Student = require("../model/student");
 
 // get all students
-const getAllStudents = () => {
-  Student.find({}).then((students) => {
-    return students;
-  });
+const getAllStudents = async () => {
+  return await Student.find({});
 };
 
 // get all students with name set to "Ido"
