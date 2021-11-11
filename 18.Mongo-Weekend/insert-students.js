@@ -1,5 +1,4 @@
 const Student = require("./model/student");
-const moment = require("moment");
 const buildStudent = (name, surName, date, phone, gender, courses) => {
   const birth = new Date(
     `${date.split("/")[2]}/${date.split("/")[1]}/${date.split("/")[0]}Z`
