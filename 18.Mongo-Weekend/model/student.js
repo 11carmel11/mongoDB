@@ -19,7 +19,7 @@ const StudentSchema = new mongoose.Schema({
     required: true,
   },
   birth: {
-    type: Date,
+    type: String,
     required: true,
   },
   phone: {
@@ -33,3 +33,4 @@ const StudentSchema = new mongoose.Schema({
 });
 
 const Student = mongoose.model("Student", StudentSchema);
+module.exports = Student;
