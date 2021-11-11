@@ -1,4 +1,4 @@
-const Student = require("../model/student");
+const Student = require("../../model/student");
 
 // get all students
 const getAllStudents = async () => {

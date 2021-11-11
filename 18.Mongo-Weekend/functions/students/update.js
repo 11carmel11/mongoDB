@@ -1,4 +1,4 @@
-const Student = require("../model/student");
+const Student = require("../../model/student");
 
 // add a JavaScript course to the students where name set to "Yahalom"
 const addJSCourseToYahalom = async () => {

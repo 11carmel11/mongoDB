@@ -1,4 +1,4 @@
-const Student = require("../model/student");
+const Student = require("../../model/student");
 
 //  find all students that have a name that contains the letter "o"
 const findAllWithO = async () => {

@@ -1,4 +1,4 @@
-const Student = require("../model/student");
+const Student = require("../../model/student");
 
 // delete the student where name set to "Ido"
 const deleteIdo = async () => {

@@ -1,5 +1,5 @@
-const Comments = require("../model/comments");
-const Posts = require("../model/posts");
+const Comments = require("../../model/comments");
+const Posts = require("../../model/posts");
 
 // find all comments
 const findAllComments = async () => {
