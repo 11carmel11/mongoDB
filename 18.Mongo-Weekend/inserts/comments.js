@@ -20,33 +20,39 @@ const insert = async (username, commentText, post) => {
   }
 };
 const insertAll = async () => {
-  const first = await insert(
+  const firstComment = await insert(
     "GoodGuyGreg",
     "Hope you got a good deal!",
     "Borrows something"
   );
-  const second = await insert(
+  const secondComment = await insert(
     "GoodGuyGreg",
     "What's mine is yours!",
     "Borrows everything"
   );
-  const third = await insert(
+  const thirdComment = await insert(
     "GoodGuyGreg",
     "Don't violate the licensing agreement!",
     "Forks your repo on github"
   );
-  const fourth = await insert(
+  const fourthComment = await insert(
     "ScumbagSteve",
     "It still isn't clean",
     "Passes out at party"
   );
-  const fifth = await insert(
+  const fifthComment = await insert(
     "ScumbagSteve",
     "Denied your PR cause I found a hack",
     "Reports a bug in your code"
   );
-  if (first && second && third && fourth && fifth) {
+  if (
+    firstComment &&
+    secondComment &&
+    thirdComment &&
+    fourthComment &&
+    fifthComment
+  ) {
     console.log(`inserted all comments`);
-  }
+  } else console.log("L");
 };
 insertAll();
