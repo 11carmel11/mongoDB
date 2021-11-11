@@ -1,20 +1,20 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const PostsSchema = new mongoose.Schema({
+const CommentsSchema = new mongoose.Schema({
   body: {
     type: String,
     required: true,
   },
-  title: {
+  comment: {
     type: String,
     required: true,
   },
-  username: {
-    type: String,
+  post: {
+    type: Object,
     required: true,
   },
 });
 
-const Posts = mongoose.model("Posts", PostsSchema);
-module.exports = Posts;
+const Comments = mongoose.model("Comments", CommentsSchema);
+module.exports = Comments;
