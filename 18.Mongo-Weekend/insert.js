@@ -1,5 +1,9 @@
 const Student = require("./model/student");
-const buildStudent = (name, surName, birth, phone, gender, courses) => {
+const moment = require("moment");
+const buildStudent = (name, surName, date, phone, gender, courses) => {
+  const birth = new Date(
+    `${date.split("/")[2]}/${date.split("/")[1]}/${date.split("/")[0]}Z`
+  );
   return new Student({ name, surName, birth, phone, gender, courses });
 };
 const ido = buildStudent("Ido", "Arbel", "26/01/1998", "0526305421", "Male", [
