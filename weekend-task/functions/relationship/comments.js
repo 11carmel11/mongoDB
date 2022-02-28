@@ -19,7 +19,5 @@ const allFromScumbagSteve = async () => {
 // find all comments belonging to the post "Reports a bug in your code"
 const findAllCommentsToThePost = async () => {
   const { _id } = await Posts.findOne({ title: "Reports a bug in your code" });
-  return await Comments.find({post = _id})
+  return await Comments.find({ post: _id });
 };
-
-

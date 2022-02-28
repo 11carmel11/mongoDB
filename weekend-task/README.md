@@ -1,4 +1,4 @@
-## Topcis:
+## Topics:
 
 1. Creating Databases & Collections using mongoose
 2. Create, Read, Update, Delete (CRUD) in MongoDB - Finding, Inserting, Deleting & Updating Elements
